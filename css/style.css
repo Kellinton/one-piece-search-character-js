@@ -1,4 +1,4 @@
-body{
+.container{
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -6,9 +6,15 @@ body{
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-image: url(/img/onepieceFundo.png);
     background-size: cover;
     overflow: hidden;
+    z-index: 1;
+}
+.fundoImg{
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 form {
     background-color: #4a4a50;
@@ -18,6 +24,7 @@ form {
     display: flex;
     flex-direction: row;
     align-items: center;
+    z-index: 1;
   }
   input {
     all: unset;
@@ -50,4 +57,5 @@ form {
     width: 500px;
     height: 500px;
     border-radius: 5px;
+    z-index: 1;
   }
